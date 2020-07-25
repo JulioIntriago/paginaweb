@@ -1,0 +1,29 @@
+*{
+    font-family: Arial;
+    text-decoration: none;
+
+}
+
+div{
+    grid-area: div;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 143, 143);
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 250px;
+
+}

@@ -1,0 +1,41 @@
+
+
+POST http://localhost:3000/comentarios HTTP/1.1
+content-type: application/json
+
+{
+   "nombre": "julio",
+   "telefono": "0989253675,
+   "comentario": "hola quiero saber si tiene discos duros"
+}
+
+
+
+
+
+POST http://localhost:3000/adopciones HTTP/1.1
+content-type: application/json
+
+{
+   "nombre": "discos",
+   "id": "0009",
+   "descripcion": "500gb de almacenmiento"
+}
+
+
+
+POST http://localhost:3000/comentarios HTTP/1.1
+content-type: application/json
+
+{
+   "nombre": "julio",
+   "telefono": "090989253675",
+   "comentario": "hola quiero saber si tiene discos duros "
+}
+
+
+
+
+
+GET http://localhost:3000/clientes/ HTTP/1.1 
+

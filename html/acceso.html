@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/acceso.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <title>INGRESO</title>
+</head>
+<body>
+
+        <SCRIPT  language=JavaScript> 
+
+        function go(){
+                if (document.form.password.value=='123' && document.form.login.value=='julio'){
+                        document.form.submit(); 
+                } 
+                else{ 
+                        swal ( "error" ,  "reintente" ,  "error" ); 
+                } 
+        }
+        
+     
+        </SCRIPT> 
+        <div class="container">
+                <div class="area-container">
+                                <div class="naveg">
+                                                <ul class="menu">
+                                                    <li><a href="../index.html">Salir</a></li>
+                                                    
+                                                   
+                                               
+                                                </ul>
+                                            </div>
+        
+                                <FORM name=form action="admin.html" class="formulary">         
+                                                  <INPUT type=text name=login placeholder="nombre"> 
+                                                <INPUT type=password name=password placeholder="password">
+                                                         
+                                                <button onclick=go() type=button value=Acceder>Aceptar</button>
+                                        </FORM> 
+                </div>
+                    
+        </div>
+               
+    
+</body>
+</html>

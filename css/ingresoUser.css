@@ -1,0 +1,174 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    /*font-family: cursive, Helvetica, sans-serif;
+    */font-size: 1em;
+    color: black;
+    margin: 0%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.container{
+    color:white;
+    /*  margenes superior y inferior*/
+    padding: 2px 1px;
+    
+    display: grid;
+
+    grid-template-columns: minmax(auto,1024px);
+    
+    }
+
+.area-container{
+    display: grid;
+    grid-template-columns: 400px 1fr 600px;
+    grid-template-areas: " . . login"
+                        " naveg naveg naveg"
+                        "formulary formulary formulary";
+}
+
+
+/*.hero-container{
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    margin-left: -250px;
+    margin-top: -250px;
+    border-radius: 10px;
+}
+
+.container{
+    margin: 10px 10px;
+}
+
+*/
+
+
+.login{
+    grid-area: login;
+    margin: 3px 9px;
+
+}
+
+.login ul{
+    padding: 3px;
+    margin: 4px 0px;
+    text-align: right;
+}
+
+.login ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+
+.naveg{
+    grid-area: naveg;
+}
+
+.menu{
+    background-color: antiquewhite;
+    padding: 2px ;
+}
+
+.menu >li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.menu > li > a{
+	display: block;
+	padding: 10px;
+	
+}
+
+.submenu{
+    position: absolute;
+    padding: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    background-color: antiquewhite;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+
+.formulary{
+    grid-area: formulary;
+    border: 1px solid black;
+  
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    
+    margin-left: -250px;
+    margin-top: -250px;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+input{
+    margin-top: 10px;
+    margin-left: 13px;
+    padding: 8px;
+    width:95%;
+	border: 1px solid rgb(255, 143, 143);
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+label{
+    font-size: 20px;
+}
+button{
+    margin-left: 42%;
+    margin-bottom: 10px;
+    padding: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+button:hover{
+    transition: all .8s;
+    color: #1883ba;
+    background-color: #ffffff;
+    
+}
+  
+
+    .x{
+        display: flex;
+        position: relative;
+        top: 350px;
+        left: 320px;
+        align-items: center;
+        justify-content: center;
+    }

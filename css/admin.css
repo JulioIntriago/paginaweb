@@ -1,0 +1,95 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+table{
+    border: 1px solid black;
+   
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.formulary{
+    margin-top: 2%;
+    
+    border-radius: 10px;
+}
+
+/*--------------------------------------------*/
+.menu{
+    background-color: antiquewhite;
+}
+
+.menu >li{
+    display: inline-block;
+    position: relative;
+    margin: auto 16px;
+     
+    
+}
+
+.menu > li > button{
+	display: block;
+    padding: 5px;
+	
+}
+
+.submenu{
+    position: absolute;
+    padding: 0%;
+    width: 110%;
+    left: 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+   /* background-color: antiquewhite;*/
+}
+
+.submenu li{
+    width: 90%;
+}
+
+.submenu li button{
+    display: block;
+    padding: 5px;
+    margin-top: 4px;
+    width: 90%;
+    margin-left: 1px;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+button{
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+button:hover{
+    transition: all .3s;
+    color: #1883ba;
+    background-color: #ffffff;
+    
+}
+
+.salir{
+    
+    width: 70px;
+}
+a{
+    color: #ffffff;
+}

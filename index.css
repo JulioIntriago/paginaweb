@@ -1,0 +1,205 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    /*font-family: cursive, Helvetica, sans-serif;
+    */font-size: 1em;
+    color: black;
+    margin: 0%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    color:white;
+    /*  margenes superior y inferior*/
+    padding: 2px 1px;
+    
+    display: grid;
+
+    grid-template-columns: minmax(auto,1024px);
+    
+    }
+
+.area-container{
+    display: grid;
+    grid-template-columns: 400px 1fr 600px;
+    grid-template-areas: " . . login"
+                        " naveg naveg naveg"
+                        "picture picture picture"
+                        "message message message"
+                        "dog dog dog"
+                        "adop . comenta"
+                        "footer footer footer";
+}
+
+
+.login{
+    grid-area: login;
+    margin: 3px 9px;
+
+}
+
+.login ul{
+    padding: 3px;
+    margin: 4px 0px;
+    text-align: right;
+}
+
+.login ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+
+.naveg{
+    grid-area: naveg;
+}
+
+.menu{
+    background-color: antiquewhite;
+    padding: 2px ;
+}
+
+.menu >li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.menu > li > a{
+	display: block;
+	padding: 10px;
+	
+}
+
+.submenu{
+    position: absolute;
+    padding: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    background-color: antiquewhite;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+.picture{
+    grid-area: picture;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.picture img{
+    max-width: 1020px;
+    
+}
+
+.message{
+    grid-area: message;
+    width: 100%;
+    color: black;
+    margin-top: 20px;
+}
+
+.dog{
+   grid-area: dog;
+   margin-left: 25px;
+}
+
+.dog img{
+    width: 190px;
+}
+
+.adop{
+    grid-area: adop;
+     margin-top: 3em;
+    
+}
+
+.adop img {
+    margin-top: 1.5em;
+    width: 520px;
+    height: auto;
+}
+
+
+.comenta{
+    grid-area: comenta;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 10em;
+    margin-top: 2.5em; 
+}
+
+.comenta p{
+    color: black;
+}
+
+.comenta input{
+    margin-top: 10px;
+    padding: 8px;
+    width:95%;
+	border: 1px solid rgb(255, 143, 143);
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.comenta button{
+   margin-top: 15px;
+   border: none;
+    width: 5em;
+    height: 2em;
+}
+
+button:hover{
+    color: #CE7D35;
+    transition: all .3s;
+    
+}
+
+textarea{
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 95%;
+    height: 9em;
+    border: 1px solid rgb(255, 143, 143);
+	border-radius: 5px;
+    
+}
+
+
+
+.footer{
+    grid-area: footer;
+   background-color: antiquewhite;
+    width: 95%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer h1 {
+    text-align: center;
+    
+}
+
+a:hover{
+    color: #CE7D35;
+    transition: all .3s;
+}
+

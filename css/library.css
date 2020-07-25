@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bolder;
+    /*font-family: cursive, Helvetica, sans-serif;
+    */font-size: 1em;
+    color: rgb(133, 6, 252);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    grid-template-areas:"header header header header"
+                        " photo photo photo photo"
+                        " description description description description "
+                        "footer footer . .";
+}
+
+.header{
+    grid-area: header;
+}
+
+.login{
+   
+}
+
+.login ul li{
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    left: 90%;
+}
+
+.menu{
+    background-color: antiquewhite;
+}
+
+.menu >li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.menu > li > a{
+	display: block;
+	padding: 10px;
+	
+}
+
+.submenu{
+    position: absolute;
+    padding: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    background-color: antiquewhite;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+.photo {
+    grid-area: photo;
+    position: relative;
+    margin: auto;
+    top:2em;
+    
+}
+
+.description {
+    grid-area: description;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+td img{
+    width: 13.5em;
+    height: auto;
+}
+
+
+.footer{
+    margin-top: 20px;
+    border: 1px solid black;
+    grid-area: footer;
+}
+.footer ul h2{
+    text-align: center;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: auto 20px;
+}
+
+footer img{
+    width: 36px;
+    height: 36px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+
+
